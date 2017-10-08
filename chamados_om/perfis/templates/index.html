@@ -5,6 +5,15 @@
     <title>Chamados Omega</title>
   </head>
   <body>
-    <h1>TEste</h1>
+    <h1>Bem vindo a OMEGA</h1>
+    {% if perfis %}
+    <ul>
+      {% for perfil in perfis %}
+        <li><a href="{% url 'exibir' perfil.id %}">{{ perfil.nome}} / {{perfil.email}}</a></li>
+      {% endfor%}
+    </ul>
+    {% else %}
+    <p>nenhum perfil encontrado</p>
+    {% endif %}
   </body>
 </html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chamados Omega</title>
+  </head>
+  <body>
+    <h1>Detalhes do Perfil: {{ perfil.nome }}</h1>
+    <a href="{% url 'criar_chamado' perfil.id %}">Criar Chamado</a>
+  </body>
+</html>
