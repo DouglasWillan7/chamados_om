@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="col-lg-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>Todos os Chamados</strong>
+    </div>
+
+
+    <table class="table">
+      <tr>
+        <th class="col-md-6" >Setor do chamado</th>
+        <th class="col-md-6">Ações</th>
+      </tr>
+
+      {% for chamado in object_list %}
+      <tr>
+        <td>{{ chamado.setor }}</td>
+        <td><a class="btn btn-success btn-xs "href="{% url "chamado_res" chamado.id %}">Responder</a> <a class="btn btn-warning btn-xs "href="{% url "chamado_edit" chamado.id %}">editar</a>   <a class="btn btn-danger btn-xs"href="{% url "chamado_delete" chamado.id %}">Deletar</a></td>
+      </tr>
+      {% endfor%}
+    </table>
+
+  </div>
+  <a class="btn btn-success" href="{% url "chamado_new" %}">Novo Chamado</a>
+</div>
+
+
+
+{% endblock %}

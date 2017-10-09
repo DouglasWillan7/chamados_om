@@ -10,4 +10,5 @@ urlpatterns = patterns('',
     url(r'^', include('perfis.urls')),
     url(r'^', include('usuarios.urls')),
     url(r'^setores/', include('setores.urls')),
+    url(r'^chamados/', include('chamados.urls')),
 )

@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'perfis',
     'usuarios',
     'setores',
+    'chamados',
 )
 
 MIDDLEWARE_CLASSES = (

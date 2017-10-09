@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block body %}
+<form method="post">{% csrf_token %}
+    Você tem certeza que deseja excluir esse chamado: "<strong>{{ object }}</strong>" ?
+    <br>
+    <input class="btn btn-danger"type="submit" value="Confirmar" />
+</form>
+{% endblock %}
