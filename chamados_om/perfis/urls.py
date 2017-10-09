@@ -10,5 +10,4 @@ urlpatterns = patterns('',
 
     url(r'^$', views.index, name='index'),
     url(r'^perfis/(?P<perfil_id>\d+)$', views.exibir, name='exibir'),
-    url(r'^perfis/(?P<perfil_id>\d+)/criar_chamado$', views.criar_chamado, name='criar_chamado'),
 )

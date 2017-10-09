@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Chamados Omega</title>
-  </head>
-  <body>
-    <h1>Bem vindo a OMEGA</h1>
+{% extends "base.html" %}
+
+{% block body %}
+<div class="col-lg-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>Todos os Setores</strong>
+    </div>
     {% if perfis %}
     <ul>
       {% for perfil in perfis %}
@@ -15,5 +15,6 @@
     {% else %}
     <p>nenhum perfil encontrado</p>
     {% endif %}
-  </body>
-</html>
+  </div>
+</div>
+{% endblock %}
