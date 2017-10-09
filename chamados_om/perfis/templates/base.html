@@ -13,16 +13,7 @@
       <nav class="">
         <ul class="nav nav-pills pull-right">
           <li><a href="{% url 'index' %}">{{ perfil_logado.nome }}</a></li>
-          <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              Setores <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Cadastrar</a></li>
-              <li><a href="#">Editar</a></li>
-              <li><a href="#">Excluir</a></li>
-            </ul>
-          </li>
+          <li><a href="/setores/">Setores</a></li>
           <li><a href="/logout/">Logout</a></li>
         </ul>
         <h3 class="text-muted">Omega</h3>
