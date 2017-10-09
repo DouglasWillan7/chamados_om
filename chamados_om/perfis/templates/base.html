@@ -12,7 +12,7 @@
     <div class="container">
       <nav class="">
         <ul class="nav nav-pills pull-right">
-          <li><a href="{% url 'index' %}">Nome</a></li>
+          <li><a href="{% url 'index' %}">{{ perfil_logado.nome }}</a></li>
           <li role="presentation" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
               Setores <span class="caret"></span>
