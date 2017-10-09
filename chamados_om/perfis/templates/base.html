@@ -10,9 +10,19 @@
   </head>
   <body>
     <div class="container">
-      <nav class="header">
+      <nav class="">
         <ul class="nav nav-pills pull-right">
           <li><a href="{% url 'index' %}">Nome</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Setores <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Cadastrar</a></li>
+              <li><a href="#">Editar</a></li>
+              <li><a href="#">Excluir</a></li>
+            </ul>
+          </li>
           <li><a href="/logout/">Logout</a></li>
         </ul>
         <h3 class="text-muted">Omega</h3>
@@ -23,6 +33,8 @@
       </div>
     </div>
 
+    <script type="text/javascript" src="{% static "scripts/vendor/jquery-1.9.1.js" %}"></script>
+    <script type="text/javascript" src="{% static "scripts/vendor/bootstrap-min.js" %}"></script>
 
   </body>
 </html>
